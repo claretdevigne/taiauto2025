@@ -2,7 +2,8 @@ import './index.css';
 import { Store } from './lib/store/store';
 import { data } from './lib/data/data';
 import { useEffect, useState } from 'react';
-import { ActiveArrow, InactiveArrow, } from './assets/svgs.jsx'
+import { ActiveArrow, InactiveArrow, } from './assets/svgs.jsx';
+import LOGO from './assets/tai_logo.png';
 
 const Header = () => {
 
@@ -21,8 +22,10 @@ const Header = () => {
 
 
   return (
-    <div className='flex items-center text-white bg-[#012134] justify-between min-h-10 w-screen fixed'>
-      <div className='ml-20 z-10'></div>
+    <div className='flex items-center text-white bg-[#012134] px-5 md:px-20 justify-between min-h-15 w-screen fixed'>
+      <div className='z-10'>
+        <img src={LOGO} width={100} alt='logo'/>
+      </div>
       <div className='flex gap-2'>
         <span onClick={() => loadInfo("000")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "000" && "text-blue-500"}`}>Riu Ventura</span>
         <span>|</span>
@@ -30,7 +33,6 @@ const Header = () => {
         <span>|</span>
         <span onClick={() => loadInfo("002")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "002" && "text-blue-500"}`}>Riu Jalisco</span>
       </div>
-      <div className='mr-20'></div>
     </div>
   )
 }
@@ -64,7 +66,7 @@ const Resumen = () => {
 
   return (
     <div>
-      <h1 className='text-2xl mt-10 mb-5 text-center'>SISTEMA DE AUTOMATIZACIÓN</h1>
+      <h1 className='text-2xl mt-15 mb-5 text-center'>SISTEMA DE AUTOMATIZACIÓN</h1>
       <div className='border border-gray-300 rounded-xl p-5 shadow-xl mb-10'>
         <h1 className='text-xl mb-2'>Resumen General del proyecto</h1>
         <ul>
