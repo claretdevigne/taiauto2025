@@ -135,7 +135,7 @@ const Recursos = () => {
                   <tbody>
                     {
                       rec.content.map((con, key) => (
-                        <tr onClick={e => handleContent(e, con.url)} className='mb-5' key={key}>
+                        <tr onClick={e => handleContent(e, con.url)} className='mb-5 hover:bg-gray-100' key={key}>
                           <td>{con.id}</td>
                           <td>{con.description}</td>
                           <td className='py-2 text-center'><span className={`rounded-2xl text-white text-bold px-2 ${con.status === "PENDING" ? "bg-red-500" :
