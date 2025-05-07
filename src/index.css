@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ocultar en móviles, mostrar en escritorio */
+.only-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .only-desktop {
+    display: table;
+  }
+}
+
+/* Mostrar en móviles, ocultar en escritorio */
+.only-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .only-mobile {
+    display: none;
+  }
+}

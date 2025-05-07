@@ -24,11 +24,11 @@ const Header = () => {
     <div className='flex items-center text-white bg-[#012134] justify-between min-h-10 w-screen fixed'>
       <div className='ml-20 z-10'></div>
       <div className='flex gap-2'>
-        <span onClick={() => loadInfo("000")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "000" && "text-blue-500"}`}>Hotel Riu Ventura</span>
+        <span onClick={() => loadInfo("000")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "000" && "text-blue-500"}`}>Riu Ventura</span>
         <span>|</span>
-        <span onClick={() => loadInfo("001")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "001" && "text-blue-500"}`}>Hotel Riu Guanacaste</span>
+        <span onClick={() => loadInfo("001")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "001" && "text-blue-500"}`}>Riu Guanacaste</span>
         <span>|</span>
-        <span onClick={() => loadInfo("002")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "002" && "text-blue-500"}`}>Hotel Riu Jalisco</span>
+        <span onClick={() => loadInfo("002")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "002" && "text-blue-500"}`}>Riu Jalisco</span>
       </div>
       <div className='mr-20'></div>
     </div>
@@ -121,21 +121,11 @@ const Recursos = () => {
                 {rec.text}
               </div>
               <div className={`px-6 ${active !== key && 'hidden'}`}>
-                <table className='w-full'>
-                  <thead>
-                    <tr>
-                      <th>Código</th>
-                      <th className='text-center'>Descripción</th>
-                      <th className='text-center'>Estatus</th>
-                      <th className='text-center'>Revisión</th>
-                      <th className='text-center'>Fecha</th>
-                    </tr>
-                  </thead>
-
+                <table className='w-full only-desktop'>
                   <tbody>
                     {
                       rec.content.map((con, key) => (
-                        <tr onClick={e => handleContent(e, con.url)} className='mb-5 hover:bg-gray-100' key={key}>
+                        <tr onClick={e => handleContent(e, con.url)} className=' my-5 hover:bg-gray-100 border-b-1 border-gray-200' key={key}>
                           <td>{con.id}</td>
                           <td>{con.description}</td>
                           <td className='py-2 text-center'><span className={`rounded-2xl text-white text-bold px-2 ${con.status === "PENDING" ? "bg-red-500" :
@@ -146,13 +136,39 @@ const Recursos = () => {
                                 con.status === "DOING" ? "EN PROCESO" :
                                   "LISTO"
                             }</span></td>
-                          <td className='text-center'>{con.rev}</td>
+                          <td className='text-center'>Rev. {con.rev}</td>
                           <td className='text-center'>{con.date}</td>
                         </tr>
                       ))
                     }
                   </tbody>
                 </table>
+                <div className='w-full only-mobile'>
+                  {
+                    rec.content.map((con, key) => (
+                      <div onClick={e => handleContent(e, con.url)} className='flex justify-between my-5 hover:bg-gray-100 border-b-1 border-gray-200' key={key}>
+                        <div className='flex flex-col'>
+                          <td className='text-bold'>{con.id}</td>
+                          <td>{con.description}</td>
+                          <td>Rev. {con.rev}</td>
+                          <td>{con.date}</td>
+                        </div>
+                        <div>
+                          <div>Estatus:</div>
+                          <div className='py-2 text-center'><span className={`rounded-2xl text-white text-bold px-2 ${con.status === "PENDING" ? "bg-red-500" :
+                            con.status === "DOING" ? "bg-yellow-500" :
+                              "bg-green-500"}
+                        `}>{
+                              con.status === "PENDING" ? "PENDIENTE" :
+                                con.status === "DOING" ? "EN PROCESO" :
+                                  "LISTO"
+                            }</span></div>
+                        </div>
+
+                      </div>
+                    ))
+                  }
+                </div>
               </div>
             </li>
           ))
@@ -165,7 +181,7 @@ const Recursos = () => {
 const Dashboard = () => {
 
   return (
-    <div className='px-20 mt-5'>
+    <div className='px-4 md:px-20 mt-10 md:mt-5'>
       <Resumen />
       <Recursos />
     </div>
