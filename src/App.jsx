@@ -27,7 +27,7 @@ const Header = () => {
         <img src={LOGO} width={100} alt='logo'/>
       </div>
       <div className='flex gap-2'>
-        <span onClick={() => loadInfo("000")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "000" && "text-blue-500"}`}>Riu Ventura</span>
+        <span onClick={() => loadInfo("000")} className={`mmmmmmmmmmmmmmnn cursor-pointer text-bold hover:text-blue-500 ${selectedId === "000" && "text-blue-500"}`}>Riu Ventura</span>
         <span>|</span>
         <span onClick={() => loadInfo("001")} className={`cursor-pointer text-bold hover:text-blue-500 ${selectedId === "001" && "text-blue-500"}`}>Riu Guanacaste</span>
         <span>|</span>
@@ -67,8 +67,8 @@ const Resumen = () => {
   return (
     <div>
       <h1 className='text-2xl mt-15 mb-5 text-center'>SISTEMA DE AUTOMATIZACIÓN</h1>
-      <div className='border border-gray-300 rounded-xl p-5 shadow-xl mb-10'>
-        <h1 className='text-xl mb-2'>Resumen General del proyecto</h1>
+      <div className='border bg-white border-gray-300 rounded-xl p-5 shadow-xl mb-10'>
+        <h1 className='text-xl text-bold mb-2'>{"Resumen General del proyecto".toUpperCase()}</h1>
         <ul>
           <li>Nombre del hotel: {hotelInfo && hotelInfo[0].hotel}</li>
           <li>Etapa del proyecto: {hotelInfo && hotelInfo[0].etapa}</li>
@@ -95,7 +95,9 @@ const Recursos = () => {
 
   const handleContent = (e, url) => {
     e.stopPropagation()
-    window.open(url, "_blank")
+    if (url) {
+      window.open(url, "_blank")
+    }
   }
 
   if (!hotelInfo) return (
@@ -111,8 +113,8 @@ const Recursos = () => {
         {
           hotelInfo && hotelInfo[0].recursos.map((rec, key) => (
             <li key={key} onClick={() => handleRecursos(key)}
-              className={`flex flex-col cursor-pointer ${active === key && 'border border-gray-200'}`}>
-              <div className={`flex ${active === key && 'bg-gray-200'}`}>
+              className={`flex flex-col rounded-2xl hover:bg-gray-200 cursor-pointer ${active === key && 'border border-gray-200 hover:bg-white'}`}>
+              <div className={`flex ${active === key && 'bg-gray-200 rounded-2xl'}`}>
                 <span>
                   {
                     active === key ?
@@ -193,7 +195,7 @@ const Dashboard = () => {
 function App() {
 
   return (
-    <div className='flex flex-col h-screen w-screen'>
+    <div className='flex flex-col bg-[#ECF2F9] h-screen w-screen'>
       <Header />
       <Dashboard />
     </div>
