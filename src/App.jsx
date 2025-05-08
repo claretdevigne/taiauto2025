@@ -193,7 +193,7 @@ const Dashboard = () => {
 function App() {
 
   return (
-    <div className='flex flex-col bg-[#ECF2F9] h-screen w-screen'>
+    <div className='flex flex-col bg-[#ECF2F9] min-h-screen w-screen'>
       <Header />
       <Dashboard />
     </div>
