@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <div className='flex items-center shadow-xl text-white bg-[#012134] px-1 sm:px-5 md:px-20 justify-between min-h-10 w-screen fixed'>
-      <div className='z-10 mr-3'>
+      <div className='z-10 mx-3'>
         <img src={LOGO} width={100} alt='logo' className='sm:w-[100px]' />
       </div>
       <div className='flex gap-1 space-between'>
