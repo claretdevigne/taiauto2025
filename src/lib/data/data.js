@@ -106,10 +106,10 @@ export const data = [
           },
           {
             id: "VEN-DMA-GRAL",
-            url: "https://drive.google.com/file/d/1N0aL-8gtj2QGLPco7vq_4mlHXL4JKagj/view",
+            url: "https://drive.google.com/file/d/1EOZBjuzu0tRIbPQMNthuwgsXQiUey3Sm/view",
             description: "Diagrama de principios",
-            date: "03-05-25",
-            rev: 1,
+            date: "09-05-25",
+            rev: 2,
             status: "DONE",
           },
         ]
