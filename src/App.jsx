@@ -22,11 +22,11 @@ const Header = () => {
 
 
   return (
-    <div className='flex items-center shadow-xl text-white bg-[#012134] px-5 md:px-20 justify-between min-h-10 w-screen fixed'>
-      <div className='z-10'>
+    <div className='flex items-center shadow-xl text-white bg-[#012134] px-1 sm:px-5 md:px-20 justify-between min-h-10 w-screen fixed'>
+      <div className='z-10 mr-3'>
         <img src={LOGO} width={100} alt='logo' className='sm:w-[100px]' />
       </div>
-      <div className='flex gap-5'>
+      <div className='flex gap-1 space-between'>
         <span onClick={() => loadInfo("000")} className={`mmmmmmmmmmmmmmnn  cursor-pointer text-center px-2 py-1 rounded-sm text-bold hover:text-[#012134] border-b-2 border-none ${selectedId === "000" && "border-b-2 border-solid rounded-none border-white"} hover:bg-white`}>Riu Ventura</span>
         <span onClick={() => loadInfo("001")} className={`cursor-pointer text-center px-2 py-1 rounded-sm text-bold hover:text-[#012134] border-b-2 border-none  ${selectedId === "001" && "border-b-2 border-solid border-white rounded-none"} hover:bg-white`}>Riu Guanacaste</span>
         <span onClick={() => loadInfo("002")} className={`cursor-pointer text-center px-2 py-1 rounded-sm text-bold hover:text-[#012134] border-b-2 border-none ${selectedId === "002" && "border-b-2 border-solid border-white rounded-none"} hover:bg-white`}>Riu Jalisco</span>
