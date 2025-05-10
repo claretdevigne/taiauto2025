@@ -82,10 +82,10 @@ export const data = [
         content: [
           {
             id: "VEN-AUT-DLOG",
-            url: "https://drive.google.com/file/d/1FIbzhKWpLxa35AzOCcEtxbiOtpsoYdGx/view?usp=sharing",
+            url: "https://drive.google.com/file/d/1FFUWhCITMpLrfXoRErSBATWqZM8DHcxu/view",
             description: "Diagrama de distribución lógica",
-            date: "07-05-25",
-            rev: 3,
+            date: "09-05-25",
+            rev: 4,
             status: "DONE",
           },
           {
