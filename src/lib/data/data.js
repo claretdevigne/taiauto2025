@@ -20,10 +20,10 @@ export const data = [
         content: [
           {
             id: "VEN-AUT-NSOT",
-            url: "https://drive.google.com/file/d/1LXmp_E16f7YpcAxlwGExR4na5cle1Cqx/view",
+            url: "https://drive.google.com/file/d/15jcJ54Wz0poG91n_GZAMM1qBBI0J75xG/view",
             description: "Plano de redes - Sótano",
-            date: "06-05-25",
-            rev: 2,
+            date: "09-05-25",
+            rev: 3,
             status: "DONE",
           },
           {
@@ -36,10 +36,10 @@ export const data = [
           },
           {
             id: "VEN-AUT-NMEZ",
-            url: "https://drive.google.com/file/d/1Vc6QvbWsxqZs3t9m4L4KyMHytPf2AAnM/view",
+            url: "https://drive.google.com/file/d/1dSCo9chQ5AwtfJbzuEiPp_vp2VcoX0G-/view",
             description: "Plano de redes - Mezzanine",
-            date: "06-05-25",
-            rev: 2,
+            date: "09-05-25",
+            rev: 3,
             status: "DONE",
           },
           {
