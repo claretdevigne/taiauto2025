@@ -5,7 +5,7 @@ export const data = [
     etapa: 2,
     porcentaje: {
       etapa_1: 9,
-      etapa_2: 10,
+      etapa_2: 30,
       etapa_3: 0,
       etapa_4: 0,
       factor_1: 2.777777778,
