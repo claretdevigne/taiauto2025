@@ -118,9 +118,9 @@ export const data = [
         id: 3,
         text: "Diagramas de conexión controladores (PDF)",
         content: [
-          { id: "DC-RVEN-C01", url: "https://drive.google.com/file/d/1PrkuLIYPw0GltvST8OnFngfKCD97dAH0/view", description: "Chiller 01", date: "10-05-25", rev: 1, status: "DONE" },
-          { id: "DC-RVEN-C02", url: "https://drive.google.com/file/d/1MW2xc0GqNxrztF1GhZ0aZxnmfOIykx-X/view", description: "Chiller 02", date: "10-05-25", rev: 1, status: "DONE" },
-          { id: "DC-RVEN-C03", url: "https://drive.google.com/file/d/1IfUghNTl9H2EoivFbYiFzgCSWGx4aSes/view", description: "Heat Machine", date: "10-05-25", rev: 1, status: "DONE" },
+          { id: "DC-RVEN-C01", url: "https://drive.google.com/file/d/19FOydG1zxA4Jk6rqvLvN8Zr-IZjN2Pb_/view", description: "Chiller 01", date: "10-05-25", rev: 1, status: "DONE" },
+          { id: "DC-RVEN-C02", url: "https://drive.google.com/file/d/1-jpaEjbdOGIQfCosaqW_gEjMxudMeTEc/view", description: "Chiller 02", date: "10-05-25", rev: 1, status: "DONE" },
+          { id: "DC-RVEN-C03", url: "https://drive.google.com/file/d/16sMQrNck4R7ghnHxW5ANuBNR5OssktAY/view", description: "Heat Machine", date: "10-05-25", rev: 1, status: "DONE" },
           { id: "DC-RVEN-C04", url: "https://drive.google.com/file/d/1eDU65soEQSeT3EahiJr_I_pGiPfMPzHo/view", description: "Bombas AH Bloque A", date: "10-05-25", rev: 1, status: "DONE" },
           { id: "DC-RVEN-C05", url: "https://drive.google.com/file/d/10BzhY_ri-tKIa6N-QJz2gtLWHmVPmB-Y/view", description: "Bombas AH Bloque B", date: "10-05-25", rev: 1, status: "DONE" },
           { id: "DC-RVEN-C06", url: "https://drive.google.com/file/d/1MuM_K5Ef0y2mwgvdy4KJC1lnVEmLlGBY/view", description: "Bombas AH Renovación", date: "10-05-25", rev: 1, status: "DONE" },
@@ -181,8 +181,8 @@ export const data = [
           { id: "DC-RVEN-C61", url: "https://drive.google.com/file/d/1s4T5t3bfnlmQUz1bjWu2KVWdqcw3JrA0/view", description: "Intercambiador minipiscina h1-10", date: "10-05-25", rev: 1, status: "DONE" },
           { id: "DC-RVEN-C62", url: "https://drive.google.com/file/d/1kfU3GHtx9D44KblTK3wnclwq0D8WDtST/view", description: "Intercambiador minipiscina h11-21", date: "10-05-25", rev: 1, status: "DONE" },
           { id: "DC-RVEN-C63", url: "https://drive.google.com/file/d/1Mw9zDlt7PoOxw3VPFmrkF3ulAnlLXYM6/view", description: "Intercambiador minipiscina h22-33", date: "10-05-25", rev: 1, status: "DONE" },
-          { id: "DC-RVEN-C64", url: "https://drive.google.com/file/d/1k1uJ7mUkeG8NOMeODY8MXybdFI9yuDcT/view", description: "Torres de enfriamiento 1", date: "10-05-25", rev: 1, status: "DONE" },
-          { id: "DC-RVEN-C65", url: "https://drive.google.com/file/d/19RMqhVz37PvKd6fPsgTFsqozazxJS1We/view", description: "Torres de enfriamiento 2", date: "10-05-25", rev: 1, status: "DONE" }
+          { id: "DC-RVEN-C64", url: "https://drive.google.com/file/d/14zJo68JydAdAhY-N8VWcZvzSx8GPgbWH/view", description: "Torres de enfriamiento 1", date: "10-05-25", rev: 1, status: "DONE" },
+          { id: "DC-RVEN-C65", url: "https://drive.google.com/file/d/1t_tlx6w10IyBf9gT8SeDKJkeFvFHHQaP/view", description: "Torres de enfriamiento 2", date: "10-05-25", rev: 1, status: "DONE" }
         ]
         
       },
